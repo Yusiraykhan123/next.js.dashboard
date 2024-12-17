@@ -27,6 +27,10 @@ const config: Config = {
       },
     },
   },
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd8cb54 (lalala)
   plugins: [require('@tailwindcss/forms')],
 };
 export default config;

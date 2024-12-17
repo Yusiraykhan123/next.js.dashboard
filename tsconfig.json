@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "ES2017",
+=======
+    "target": "es5",
+>>>>>>> fd8cb54 (lalala)
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,7 +22,10 @@
         "name": "next"
       }
     ],
+<<<<<<< HEAD
     "baseUrl": ".",
+=======
+>>>>>>> fd8cb54 (lalala)
     "paths": {
       "@/*": ["./*"]
     }
@@ -28,7 +35,11 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
+<<<<<<< HEAD
     "app/lib/placeholder-data.ts",
+=======
+    "app/lib/placeholder-data.js",
+>>>>>>> fd8cb54 (lalala)
     "scripts/seed.js"
   ],
   "exclude": ["node_modules"]

@@ -1,13 +1,24 @@
 'use client';
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd8cb54 (lalala)
 import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
+<<<<<<< HEAD
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+=======
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
+
+>>>>>>> fd8cb54 (lalala)
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
@@ -22,6 +33,10 @@ const links = [
 
 export default function NavLinks() {
   const pathname = usePathname();
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd8cb54 (lalala)
   return (
     <>
       {links.map((link) => {

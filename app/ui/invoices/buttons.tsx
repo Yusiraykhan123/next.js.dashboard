@@ -1,4 +1,8 @@
 import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
+<<<<<<< HEAD
+=======
+import { deleteInvoice } from '@/app/lib/actions';
+>>>>>>> fd8cb54 (lalala)
 import Link from 'next/link';
 
 export function CreateInvoice() {
@@ -13,10 +17,17 @@ export function CreateInvoice() {
   );
 }
 
+<<<<<<< HEAD
 export function UpdateInvoice({ id }: { id: string }) {
   return (
     <Link
       href="/dashboard/invoices"
+=======
+export function UpdateInvoice({ id }: { id: string; }) {
+  return (
+    <Link
+      href={`/dashboard/invoices/${id}/edit`}
+>>>>>>> fd8cb54 (lalala)
       className="rounded-md border p-2 hover:bg-gray-100"
     >
       <PencilIcon className="w-5" />
@@ -24,6 +35,7 @@ export function UpdateInvoice({ id }: { id: string }) {
   );
 }
 
+<<<<<<< HEAD
 export function DeleteInvoice({ id }: { id: string }) {
   return (
     <>
@@ -31,6 +43,18 @@ export function DeleteInvoice({ id }: { id: string }) {
         <span className="sr-only">Delete</span>
         <TrashIcon className="w-5" />
       </button>
+=======
+export function DeleteInvoice({ id }: { id: string; }) {
+  const deleteInvoiceWithId = deleteInvoice.bind(null, id);
+  return (
+    <>
+      <form action={deleteInvoiceWithId}>
+        <button className="rounded-md border p-2 hover:bg-gray-100">
+          <span className="sr-only">Delete</span>
+          <TrashIcon className="w-5" />
+        </button>
+      </form>
+>>>>>>> fd8cb54 (lalala)
     </>
   );
 }
